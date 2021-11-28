@@ -1,0 +1,4 @@
+name: GoldmanHats
+version: '${project.version}'
+main: lee.code.goldmanhats.GoldmanHats
+api-version: 1.17
