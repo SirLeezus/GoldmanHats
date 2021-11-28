@@ -18,6 +18,6 @@ public enum EntityHats {
 
     public ItemStack getItem() {
         GoldmanHats plugin = GoldmanHats.getPlugin();
-        return plugin.getPU().getItem(Material.STICK, name, null, id);
+        return plugin.getPU().getItem(Material.GUNPOWDER, name, null, id);
     }
 }

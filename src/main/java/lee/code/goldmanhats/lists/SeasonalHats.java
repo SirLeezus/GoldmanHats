@@ -21,6 +21,6 @@ public enum SeasonalHats {
     public ItemStack getItem() {
         GoldmanHats plugin = GoldmanHats.getPlugin();
         PU pu = plugin.getPU();
-        return plugin.getPU().getItem(Material.STICK, name, lore.replace("{0}", String.valueOf(pu.getYear())), id);
+        return plugin.getPU().getItem(Material.GUNPOWDER, name, lore.replace("{0}", String.valueOf(pu.getYear())), id);
     }
 }
