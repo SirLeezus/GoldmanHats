@@ -1,5 +1,7 @@
 package lee.code.goldmanhats;
 
+import lee.code.goldmanhats.commands.cmds.GiveHatCMD;
+import lee.code.goldmanhats.commands.tabs.GiveHatTab;
 import lee.code.goldmanhats.listeners.NormalEntityListener;
 import lee.code.goldmanhats.listeners.SeasonalEntityListener;
 import lee.code.goldmanhats.listeners.VillagerDeathListener;
@@ -15,6 +17,7 @@ public final class GoldmanHats extends JavaPlugin {
         this.pU = new PU();
 
         registerListeners();
+        registerCommands();
     }
 
     @Override
@@ -30,5 +33,10 @@ public final class GoldmanHats extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new VillagerDeathListener(), this);
         getServer().getPluginManager().registerEvents(new SeasonalEntityListener(), this);
         getServer().getPluginManager().registerEvents(new NormalEntityListener(), this);
+    }
+
+    private void registerCommands() {
+        getCommand("givehat").setExecutor(new GiveHatCMD());
+        getCommand("givehat").setTabCompleter(new GiveHatTab());
     }
 }

@@ -1,4 +1,9 @@
 name: GoldmanHats
 version: '${project.version}'
 main: lee.code.goldmanhats.GoldmanHats
-api-version: 1.17
+api-version: 1.18
+commands:
+  givehat:
+    description: Give yourself a hat.
+    permission: hats.command.givehat
+    usage: "/givehat &f<hat>"

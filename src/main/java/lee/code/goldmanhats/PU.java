@@ -1,9 +1,12 @@
 package lee.code.goldmanhats;
 
+import lee.code.goldmanhats.lists.EntityHats;
+import lee.code.goldmanhats.lists.SeasonalHats;
 import lee.code.goldmanhats.lists.VillagerHats;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -15,6 +18,10 @@ import java.util.stream.Collectors;
 public class PU {
 
     private final Random random = new Random();
+
+    public String format(String message) {
+        return ChatColor.translateAlternateColorCodes('&', message);
+    }
 
     public Component formatC(String message) {
         LegacyComponentSerializer serializer = LegacyComponentSerializer.legacyAmpersand();
@@ -36,8 +43,24 @@ public class PU {
         return item;
     }
 
-    public List<String> getVillagerHatsNames() {
+    public List<String> getVillagerHatNames() {
         return EnumSet.allOf(VillagerHats.class).stream().map(VillagerHats::name).collect(Collectors.toList());
+    }
+
+    public List<String> getSeasonalHatNames() {
+        return EnumSet.allOf(SeasonalHats.class).stream().map(SeasonalHats::name).collect(Collectors.toList());
+    }
+
+    public List<String> getEntityHatNames() {
+        return EnumSet.allOf(EntityHats.class).stream().map(EntityHats::name).collect(Collectors.toList());
+    }
+
+    public List<String> getAllHatNames() {
+        List<String> hats = new ArrayList<>();
+        hats.addAll(getVillagerHatNames());
+        hats.addAll(getSeasonalHatNames());
+        hats.addAll(getEntityHatNames());
+        return hats;
     }
 
     public int getYear() {

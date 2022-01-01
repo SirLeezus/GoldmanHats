@@ -31,12 +31,12 @@ public class VillagerDeathListener implements Listener {
                     String villagerType = villager.getVillagerType().name();
                     String villagerProfession = villager.getProfession().name();
 
-                    if (pu.getVillagerHatsNames().contains(villagerType)) {
+                    if (pu.getVillagerHatNames().contains(villagerType)) {
                         ItemStack hat = VillagerHats.valueOf(villagerType).getItem();
                         location.getWorld().dropItemNaturally(location, hat);
                     }
 
-                    if (pu.getVillagerHatsNames().contains(villagerProfession)) {
+                    if (pu.getVillagerHatNames().contains(villagerProfession)) {
                         ItemStack hat = VillagerHats.valueOf(villagerProfession).getItem();
                         location.getWorld().dropItemNaturally(location, hat);
                     }
