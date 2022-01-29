@@ -82,6 +82,12 @@ public class PU {
     }
 
     //10%
+    public boolean getSeaCrownRNG() {
+        int nextInt = random.nextInt(10);
+        return nextInt == 0;
+    }
+
+    //10%
     public boolean getSeasonalRNG() {
         int nextInt = random.nextInt(10);
         return nextInt == 0;

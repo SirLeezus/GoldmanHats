@@ -10,6 +10,7 @@ import org.bukkit.inventory.ItemStack;
 public enum EntityHats {
 
     WITCH(2001, "&6Witch Hat"),
+    SEA_CROWN(2002, "&6Sea Crown"),
 
     ;
 
