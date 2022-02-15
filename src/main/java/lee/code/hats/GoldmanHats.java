@@ -1,10 +1,10 @@
-package lee.code.goldmanhats;
+package lee.code.hats;
 
-import lee.code.goldmanhats.commands.cmds.GiveHatCMD;
-import lee.code.goldmanhats.commands.tabs.GiveHatTab;
-import lee.code.goldmanhats.listeners.NormalEntityListener;
-import lee.code.goldmanhats.listeners.SeasonalEntityListener;
-import lee.code.goldmanhats.listeners.VillagerDeathListener;
+import lee.code.hats.commands.cmds.GiveHatCMD;
+import lee.code.hats.commands.tabs.GiveHatTab;
+import lee.code.hats.listeners.NormalEntityListener;
+import lee.code.hats.listeners.SeasonalEntityListener;
+import lee.code.hats.listeners.VillagerDeathListener;
 import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 

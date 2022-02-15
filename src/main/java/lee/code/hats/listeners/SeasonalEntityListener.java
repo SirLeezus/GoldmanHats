@@ -1,8 +1,8 @@
-package lee.code.goldmanhats.listeners;
+package lee.code.hats.listeners;
 
-import lee.code.goldmanhats.GoldmanHats;
-import lee.code.goldmanhats.PU;
-import lee.code.goldmanhats.lists.SeasonalHats;
+import lee.code.hats.GoldmanHats;
+import lee.code.hats.PU;
+import lee.code.hats.lists.SeasonalHats;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;

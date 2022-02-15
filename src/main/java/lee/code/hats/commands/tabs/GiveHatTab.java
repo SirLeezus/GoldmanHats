@@ -1,6 +1,6 @@
-package lee.code.goldmanhats.commands.tabs;
+package lee.code.hats.commands.tabs;
 
-import lee.code.goldmanhats.GoldmanHats;
+import lee.code.hats.GoldmanHats;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;

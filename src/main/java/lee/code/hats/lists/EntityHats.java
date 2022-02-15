@@ -1,6 +1,6 @@
-package lee.code.goldmanhats.lists;
+package lee.code.hats.lists;
 
-import lee.code.goldmanhats.GoldmanHats;
+import lee.code.hats.GoldmanHats;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.bukkit.Material;

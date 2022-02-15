@@ -1,8 +1,8 @@
-package lee.code.goldmanhats;
+package lee.code.hats;
 
-import lee.code.goldmanhats.lists.EntityHats;
-import lee.code.goldmanhats.lists.SeasonalHats;
-import lee.code.goldmanhats.lists.VillagerHats;
+import lee.code.hats.lists.EntityHats;
+import lee.code.hats.lists.SeasonalHats;
+import lee.code.hats.lists.VillagerHats;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;

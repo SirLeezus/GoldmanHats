@@ -1,11 +1,11 @@
-package lee.code.goldmanhats.commands.cmds;
+package lee.code.hats.commands.cmds;
 
-import lee.code.goldmanhats.GoldmanHats;
-import lee.code.goldmanhats.PU;
-import lee.code.goldmanhats.lists.EntityHats;
-import lee.code.goldmanhats.lists.Lang;
-import lee.code.goldmanhats.lists.SeasonalHats;
-import lee.code.goldmanhats.lists.VillagerHats;
+import lee.code.hats.GoldmanHats;
+import lee.code.hats.PU;
+import lee.code.hats.lists.EntityHats;
+import lee.code.hats.lists.Lang;
+import lee.code.hats.lists.SeasonalHats;
+import lee.code.hats.lists.VillagerHats;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

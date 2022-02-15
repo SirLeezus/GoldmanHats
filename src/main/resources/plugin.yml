@@ -1,6 +1,6 @@
 name: GoldmanHats
 version: '${project.version}'
-main: lee.code.goldmanhats.GoldmanHats
+main: lee.code.hats.GoldmanHats
 api-version: 1.18
 commands:
   givehat:
