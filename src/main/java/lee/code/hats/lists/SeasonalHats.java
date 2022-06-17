@@ -1,7 +1,7 @@
 package lee.code.hats.lists;
 
+import lee.code.core.util.bukkit.BukkitUtils;
 import lee.code.hats.GoldmanHats;
-import lee.code.hats.PU;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.bukkit.Material;
@@ -19,8 +19,6 @@ public enum SeasonalHats {
     @Getter private final String lore;
 
     public ItemStack getItem() {
-        GoldmanHats plugin = GoldmanHats.getPlugin();
-        PU pu = plugin.getPU();
-        return plugin.getPU().getItem(Material.GUNPOWDER, name, lore.replace("{0}", String.valueOf(pu.getYear())), id);
+        return BukkitUtils.getCustomItem(Material.GUNPOWDER, name, lore.replace("{0}", String.valueOf(GoldmanHats.getPlugin().getPU().getYear())), id, false);
     }
 }

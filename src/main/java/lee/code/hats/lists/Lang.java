@@ -1,7 +1,6 @@
 package lee.code.hats.lists;
 
-import lee.code.hats.GoldmanHats;
-import lee.code.hats.PU;
+import lee.code.core.util.bukkit.BukkitUtils;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import net.kyori.adventure.text.Component;
@@ -16,20 +15,16 @@ public enum Lang {
     @Getter private final String string;
 
     public String getString(String[] variables) {
-        GoldmanHats plugin = GoldmanHats.getPlugin();
-        PU pu = plugin.getPU();
         String value = string;
-        if (variables == null || variables.length == 0) return pu.format(value);
+        if (variables == null || variables.length == 0) return BukkitUtils.parseColorString(value);
         for (int i = 0; i < variables.length; i++) value = value.replace("{" + i + "}", variables[i]);
-        return pu.format(value);
+        return BukkitUtils.parseColorString(value);
     }
 
     public Component getComponent(String[] variables) {
-        GoldmanHats plugin = GoldmanHats.getPlugin();
-        PU pu = plugin.getPU();
         String value = string;
-        if (variables == null || variables.length == 0) return pu.formatC(value);
+        if (variables == null || variables.length == 0) return BukkitUtils.parseColorComponent(value);
         for (int i = 0; i < variables.length; i++) value = value.replace("{" + i + "}", variables[i]);
-        return pu.formatC(value);
+        return BukkitUtils.parseColorComponent(value);
     }
 }

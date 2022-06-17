@@ -1,6 +1,6 @@
 package lee.code.hats.lists;
 
-import lee.code.hats.GoldmanHats;
+import lee.code.core.util.bukkit.BukkitUtils;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.bukkit.Material;
@@ -18,7 +18,6 @@ public enum EntityHats {
     @Getter private final String name;
 
     public ItemStack getItem() {
-        GoldmanHats plugin = GoldmanHats.getPlugin();
-        return plugin.getPU().getItem(Material.GUNPOWDER, name, null, id);
+        return BukkitUtils.getCustomItem(Material.GUNPOWDER, name, null, id, false);
     }
 }
