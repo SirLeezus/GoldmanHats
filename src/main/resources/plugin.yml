@@ -2,6 +2,7 @@ name: GoldmanHats
 version: '${project.version}'
 main: lee.code.hats.GoldmanHats
 api-version: 1.19
+depend: [GoldmanCore]
 commands:
   givehat:
     description: Give yourself a hat.
